@@ -2,11 +2,11 @@ import React from "react";
 
 const Nosotros = () => {
   return (
-    <div class="about bg-light">
-      <div class="container">
-        <div class="grid-2">
-          <div class="center">
-            <i class="fas fa-id-card fa-10x"></i>
+    <div className="mt-4 about bg-light">
+      <div className="container">
+        <div className="grid-2">
+          <div className="center">
+            <i className="fas fa-id-card fa-10x"></i>
           </div>
           <div>
             <h3>About Us</h3>

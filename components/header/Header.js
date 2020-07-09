@@ -1,12 +1,19 @@
 import React from "react";
+import Servicios from "../servicios/Servicios";
 
 const Header = () => {
   return (
-    <div className="showcase    ">
+    <div className="showcase">
       <div className="content">
-        <div className="col-md-12">
-          <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-between">
+          <div className="p-2 bd-highlight  ">
             <img src="/img/logo.png" className="logoClub" />
+          </div>
+
+          <div className="d-flex flex-row-reverse bd-highlight">
+            <div className="p-2 bd-highlight ">
+              <Servicios />
+            </div>
           </div>
         </div>
 
