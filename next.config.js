@@ -1,10 +1,7 @@
-module.exports = {
-  webpack: (config) => {
-    return {
-      ...config,
-      node: {
-        fs: "empty",
-      },
-    };
-  },
-};
+const withPWA = require('next-pwa')
+
+module.exports = withPWA({
+  pwa: {
+    dest: 'public'
+  }
+})

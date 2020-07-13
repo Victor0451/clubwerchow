@@ -1,13 +1,14 @@
 import React from "react";
 import FormSolicitud from "./FormSolicitud";
 import Comercios from "./Comercios";
+import ListadoComercios from "./ListadoComercios";
 
-const Servicios = () => {
+const Servicios = ({ listado }) => {
   return (
     <div className=" services p-4">
       <div className="p-4">
         <div className="row mb-4">
-          <div className="contenedor-img ejemplo-4-1 col-md-12">
+          <div className="contenedor-img ejemplo-4-1 col-sm-12">
             <img className="tamaño" src="/img/solicitud2.png" />
             <div
               className="mascara"
@@ -24,7 +25,7 @@ const Servicios = () => {
         </div>
 
         <div className="row ">
-          <div className=" contenedor-img ejemplo-4-1 col-md-12">
+          <div className=" contenedor-img ejemplo-4-1 col-sm-12">
             <img className="tamaño" src="/img/empresas2.png" />
             <div
               className="mascara"
@@ -62,7 +63,8 @@ const Servicios = () => {
               </button>
             </div>
             <div className="modal-body  ">
-              <Comercios />
+              {/* <Comercios /> */}
+              <ListadoComercios listado={listado} />
             </div>
             <div className="modal-footer ">
               <button

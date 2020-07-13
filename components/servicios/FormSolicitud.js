@@ -3,6 +3,8 @@ import validarSolicitud from "../../validacion/validarSolicitud";
 import useValidacion from "../../hooks/useValidacion";
 import axios from "axios";
 import toastr from "toastr";
+import moment from "moment-timezone";
+import Router from "next/router";
 
 const STATE_INICIAL = {
   apellido: "",
@@ -12,10 +14,11 @@ const STATE_INICIAL = {
   telefono: "",
 };
 
-const FormSolicitud = () => {
+const FormSolicitud = ({ responsive }) => {
   let socioRef = React.createRef();
   let noSocioRef = React.createRef();
   let referidoRef = React.createRef();
+  let apellidoRef = React.createRef();
 
   const [checkerror, guardarCheckerror] = useState(null);
   const [socio, guardarSocio] = useState(null);
@@ -65,6 +68,7 @@ const FormSolicitud = () => {
         socio: valuesocio,
         nosocio: valuenosocio,
         referido: valuereferido,
+        fecha_solicitud: moment().format("YYYY-MM-DD"),
       };
 
       if (socio === null && nosocio === null && referido === null) {
@@ -76,12 +80,18 @@ const FormSolicitud = () => {
 
         await axios
           .post(
-            "http://190.231.32.232:5002/api/clubwerchow/socios/nuevasol",
+            "https://clubwerchow.com:5001/api/clubwerchow/socios/nuevasol",
             solicitud
           )
           .then((res) => {
-            console.log(res);
-            toastr.success("Tu solicitud fue enviada con exito", "ATENCION");
+            if (res.status === 200) {
+              console.log(res);
+              toastr.success("Tu solicitud fue enviada con exito", "ATENCION");
+              document.getElementById("form").reset();
+              if (responsive) {
+                Router.push("/");
+              }
+            }
           })
           .catch((error) => {
             console.log(error);
@@ -91,7 +101,7 @@ const FormSolicitud = () => {
   }
 
   return (
-    <form className="formstyle" onSubmit={handleSubmit}>
+    <form className="formstyle" id="form" onSubmit={handleSubmit}>
       <h3 className=" mb-4">
         <strong>Datos Del Solicitante</strong>
       </h3>
@@ -111,6 +121,7 @@ const FormSolicitud = () => {
             value={apellido}
             onChange={handleChange}
             onBlur={handleBlur}
+            ref={apellidoRef}
           />
           {errores.apellido && (
             <div className="mt-2 form-group  alert alert-danger">
