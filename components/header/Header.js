@@ -8,7 +8,7 @@ const Header = ({listado}) => {
       <div className="content">
         <div className="d-flex justify-content-between" >
           <div className="p-2 bd-highlight  ">
-            <img src="/img/logo.png" className="logoClub" />
+            <img src="/img/logo2.png" className="logoClub" />
           </div>
 
           <div className="d-flex flex-row-reverse bd-highlight" id="web">

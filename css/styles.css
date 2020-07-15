@@ -129,6 +129,52 @@ footer p {
   width: 400px;
 }
 
+/* BANNER SORTEO */
+
+.banner-sorteo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.image-banner {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle-banner {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(109, 105, 105, 0.315);
+  padding: 15px;
+}
+
+.banner-sorteo:hover .image-banner {
+  opacity: 1;
+}
+
+.banner-sorteo:hover .middle-banner {
+  opacity: 1;
+}
+hr {
+  border-color: black;
+
+  border-style: dotted;
+}
+
+/* ---------------- */
+
 /* ICONOS */
 
 .tamaño {

@@ -3,8 +3,9 @@ import Layout from "../components/layouts/Layout";
 import Header from "../components/header/Header";
 import Nosotros from "../components/nosotros/Nosotros";
 import Contacto from "../components/contacto/Contacto";
-import Baner from "../components/informacion/Baner";
+import BannerSorteo from "../components/informacion/BannerSorteo";
 import axios from "axios";
+import BannerTarjeta from "../components/informacion/BannerTarjeta";
 
 const index = () => {
   const [listado, guardarListado] = useState(null);
@@ -27,7 +28,9 @@ const index = () => {
     <Layout>
       <Header listado={listado} />
 
-      <Baner />
+      <BannerSorteo />
+
+      <BannerTarjeta />
 
       {/* <Nosotros /> */}
 
