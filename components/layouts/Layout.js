@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Header from '../header/Header'
 
 const Layout = (props) => {
   return (
@@ -163,8 +164,11 @@ const Layout = (props) => {
 
         <title>Club Werchow</title>
       </Head>
-      {/* <Navbar /> */}
-      <main>{props.children}</main>
+      <div >
+        <Header />
+        <main>{props.children}</main>
+      </div>
+
       <script
         src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

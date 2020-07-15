@@ -5,40 +5,69 @@ import ListadoComercios from "./ListadoComercios";
 
 const Servicios = ({ listado }) => {
   return (
-    <div className=" services p-4">
+    <div className=" seccion service p-4">
       <div className="p-4">
-        <div className="row mb-4">
-          <div className="contenedor-img ejemplo-4-1 col-sm-12">
+        <div className="row mb-4 d-flex justify-content-center">
+          <div className="contenedor-img ejemplo-4-1">
             <img className="tamaño" src="/img/solicitud2.png" />
             <div
               className="mascara"
               data-toggle="modal"
               data-target="#solicitud"
             >
-              <div className="p-4 mt-2 mr-4">
+              <div className="p-4 mt-2">
                 <a href="#" className="mt-4 link">
                   Solicitar
                 </a>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="row ">
-          <div className=" contenedor-img ejemplo-4-1 col-sm-12">
+          <div className=" contenedor-img ejemplo-4-1 ">
             <img className="tamaño" src="/img/empresas2.png" />
             <div
               className="mascara"
               data-toggle="modal"
               data-target="#empresas"
             >
-              <div className="p-4 mt-2 mr-4">
+              <div className="p-4 mt-2 ">
                 <a href="#" className="mt-4 link">
                   Listado
                 </a>
               </div>
             </div>
           </div>
+
+          <div className=" contenedor-img ejemplo-4-1 ">
+            <img className="tamaño" src="/img/resultados.png" />
+            <div
+              className="mascara"
+              data-toggle="modal"
+              data-target="#empresas"
+            >
+              <div className="p-4 mt-2 ">
+                <a href="#" className="mt-4 link">
+                  ingresar
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className=" contenedor-img ejemplo-4-1 ">
+            <img className="tamaño" src="/img/fanpage.jpeg" />
+            <div
+              className="mascara"
+              data-toggle="modal"
+              data-target="#empresas"
+            >
+              <div className="p-4 mt-2 ">
+                <a href="#" className="mt-4 link">
+                  visitar
+                </a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 

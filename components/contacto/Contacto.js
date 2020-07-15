@@ -2,7 +2,7 @@ import React from "react";
 
 const Contacto = () => {
   return (
-    <div className="d-flex justify-content-center contacto">
+    <div className="seccion d-flex justify-content-center contacto">
       <div className="container p-4">
         <h4 className="text-white">Contacto</h4>
         <ul>
