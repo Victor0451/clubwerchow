@@ -26,7 +26,7 @@ const ListadosComercios = ({ listado }) => {
   // };
 
   return (
-    <div className="mt-4">
+    <div className="listado mt-4">
       <ReactTable
         data={listado}
         filterable

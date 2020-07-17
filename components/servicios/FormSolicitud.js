@@ -102,9 +102,10 @@ const FormSolicitud = ({ responsive }) => {
 
   return (
     <form className="formstyle" id="form" onSubmit={handleSubmit}>
-      <h3 className=" mb-4">
-        <strong>Datos Del Solicitante</strong>
-      </h3>
+      <div className="col-12">
+        <h3 className="heading text-center">Datos Del Solicitante</h3>
+        <div className="heading-underline"></div>
+      </div>
       <div className="row mb-4">
         <div className="form-group col-md-4">
           <label>
@@ -295,7 +296,7 @@ const FormSolicitud = ({ responsive }) => {
         </div>
         <div className="form-group col-md-12 mt-4">
           <button
-            className="btn btn-block btn-primary"
+            className="btn btn-secondary btn-md mt-4 mb-4 btn-block"
             //onClick={buscarTitularApellido}
             data-toggle="modal"
             data-target=".modlist"

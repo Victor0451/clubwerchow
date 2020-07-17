@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Layout from "../components/layouts/Layout";
 
-import Nosotros from "../components/nosotros/Nosotros";
-import Contacto from "../components/contacto/Contacto";
-import BannerSorteo from "../components/informacion/BannerSorteo";
 import axios from "axios";
-import BannerTarjeta from "../components/informacion/BannerTarjeta";
+import Home from "../components/home/Home";
+import Nosotros from "../components/nosotros/Nosotros";
 import Servicios from "../components/servicios/Servicios";
+import Sorteos from "../components/sorteos/Sorteos";
+import Opiniones from "../components/opiniones/Opiniones";
+import Contacto from "../components/contacto/Contacto";
+import ServiciosResponsive from "../components/servicios/ServiciosResponsive";
+import SorteosResponsive from "../components/sorteos/SorteosResponsive";
 
 const index = () => {
   const [listado, guardarListado] = useState(null);
@@ -27,14 +30,19 @@ const index = () => {
 
   return (
     <Layout>
-      
+      <Home />
+
+      <Nosotros />
+
       <Servicios listado={listado} />
 
-      <BannerSorteo />
+      <ServiciosResponsive />
 
-     
+      <Sorteos />
 
-      {/* <Nosotros /> */}
+      <SorteosResponsive />
+
+      {/* <Opiniones /> */}
 
       <Contacto />
     </Layout>

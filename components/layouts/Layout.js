@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import Header from '../header/Header'
+
+import NavBar from "../navbar/Navbar";
 
 const Layout = (props) => {
   return (
@@ -164,8 +165,9 @@ const Layout = (props) => {
 
         <title>Club Werchow</title>
       </Head>
-      <div >
-        <Header />
+      <div>
+        <NavBar />
+
         <main>{props.children}</main>
       </div>
 
@@ -184,10 +186,6 @@ const Layout = (props) => {
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossOrigin="anonymous"
       ></script>
-
-      <footer className="footer">
-        <p>Club Werchow &copy; 2020</p>
-      </footer>
     </div>
   );
 };
