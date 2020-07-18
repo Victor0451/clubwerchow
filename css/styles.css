@@ -421,9 +421,15 @@ hr.socket {
 }
 
 @media (max-width: 580px) {
+  #link-solicitar {
+    width: 200px !important;
+    text-align: center;
+  }
+
   .web {
     display: none;
   }
+
   .tamaño {
     height: 80%;
     width: 50%;

@@ -8,8 +8,6 @@ import Servicios from "../components/servicios/Servicios";
 import Sorteos from "../components/sorteos/Sorteos";
 import Opiniones from "../components/opiniones/Opiniones";
 import Contacto from "../components/contacto/Contacto";
-import ServiciosResponsive from "../components/servicios/ServiciosResponsive";
-import SorteosResponsive from "../components/sorteos/SorteosResponsive";
 
 const index = () => {
   const [listado, guardarListado] = useState(null);
@@ -19,7 +17,6 @@ const index = () => {
       .get("https://clubwerchow.com:5001/api/clubwerchow/comercios/comercios")
       .then((res) => {
         const listado = res.data;
-
         guardarListado(listado);
       });
   };
@@ -36,11 +33,7 @@ const index = () => {
 
       <Servicios listado={listado} />
 
-      <ServiciosResponsive />
-
       <Sorteos />
-
-      <SorteosResponsive />
 
       {/* <Opiniones /> */}
 

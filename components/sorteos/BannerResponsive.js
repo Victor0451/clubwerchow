@@ -2,7 +2,7 @@ import React from "react";
 
 const SorteosResponsive = () => {
   return (
-    <div id="resources" className="offset responsive">
+    <div className="responsive">
       <div className="banner-sorteo">
         <img
           src="/img/sorteo.jpg"

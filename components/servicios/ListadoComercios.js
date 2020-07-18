@@ -5,8 +5,6 @@ import matchSorter from "match-sorter";
 const ListadosComercios = ({ listado }) => {
   if (!listado) return <div>CARGANDO...</div>;
 
-  console.log(listado);
-
   // const selcaso = (index) => {
   //   campana;
   //   const caso = campana[index];

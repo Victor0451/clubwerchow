@@ -1,70 +1,20 @@
 import React from "react";
 import FormSolicitud from "./FormSolicitud";
 import ListadoComercios from "./ListadoComercios";
+import Iconos from "./Iconos";
+import IconosResponsive from "./IconosResponsive";
 
 const Servicios = ({ listado }) => {
   return (
-    <div className="web" id="features">
+    <div id="features">
       <div className="jumbotron ">
         <div className="narrow">
           <div className="row text-center d-flex justify-content-center">
             <div className="col-12">
               <h3 className="heading">Secciones</h3>
               <div className="heading-underline"></div>
-            </div>
-
-            <div className="row  mb-4 ">
-              <div className="contenedor-img ejemplo-4-1">
-                <img className="tamaño" src="/img/solicitud2.png" />
-                <div
-                  className="mascara"
-                  data-toggle="modal"
-                  data-target="#solicitud"
-                >
-                  <div className="p-4 mt-2">
-                    <a className="mt-4 link">Solicitar</a>
-                  </div>
-                </div>
-              </div>
-
-              <div className=" contenedor-img ejemplo-4-1 ">
-                <img className="tamaño" src="/img/empresas2.png" />
-                <div
-                  className="mascara"
-                  data-toggle="modal"
-                  data-target="#empresas"
-                >
-                  <div className="p-4 mt-2 ">
-                    <a className="mt-4 link">Listado</a>
-                  </div>
-                </div>
-              </div>
-
-              <div className=" contenedor-img ejemplo-4-1 ">
-                <img className="tamaño" src="/img/resultados.png" />
-                <div
-                  className="mascara"
-                  data-toggle="modal"
-                  data-target="#empresas"
-                >
-                  <div className="p-4 mt-2 ">
-                    <a className="mt-4 link">ingresar</a>
-                  </div>
-                </div>
-              </div>
-
-              <div className=" contenedor-img ejemplo-4-1 ">
-                <img className="tamaño" src="/img/fanpage.jpeg" />
-                <div
-                  className="mascara"
-                  data-toggle="modal"
-                  data-target="#empresas"
-                >
-                  <div className="p-4 mt-2 ">
-                    <a className="mt-4 link">visitar</a>
-                  </div>
-                </div>
-              </div>
+              <Iconos />
+              <IconosResponsive />
             </div>
           </div>
         </div>
