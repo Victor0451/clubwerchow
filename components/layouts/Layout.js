@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
 
-import NavBar from "../navbar/Navbar";
-
 const Layout = (props) => {
   return (
     <div className="">
@@ -166,8 +164,6 @@ const Layout = (props) => {
         <title>Club Werchow</title>
       </Head>
       <div>
-        <NavBar />
-
         <main>{props.children}</main>
       </div>
 

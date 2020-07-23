@@ -12,11 +12,14 @@ const IconosResponsive = () => {
           <img className="tamaño" src="/img/empresas2.png" />
         </a>
 
-        <a href="#">
+        <a href="/sorteos/ganadores">
           <img className="tamaño" src="/img/ganadores.png" />
         </a>
 
-        <a href="https://www.facebook.com/Club-Werchow-100111638450456/">
+        <a
+          href="https://www.facebook.com/Club-Werchow-100111638450456/"
+          target="_blank"
+        >
           <img className="tamaño" src="/img/fanpage.png" />
         </a>
       </div>

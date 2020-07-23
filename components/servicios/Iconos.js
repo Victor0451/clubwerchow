@@ -26,7 +26,7 @@ const Iconos = () => {
           <img className="tamaño" src="/img/ganadores.png" />
           <div className="mascara">
             <div className="p-4 mt-2 ">
-              <a className="mt-4 link">Ingresar</a>
+              <a href="/sorteos/ganadores" className="mt-4 link">Ingresar</a>
             </div>
           </div>
         </div>
@@ -37,6 +37,7 @@ const Iconos = () => {
             <div className="p-4 mt-2 ">
               <a
                 href="https://www.facebook.com/Club-Werchow-100111638450456/"
+                target="_blank" 
                 className="mt-4 link"
               >
                 Visitar

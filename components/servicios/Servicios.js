@@ -1,10 +1,10 @@
 import React from "react";
-import FormSolicitud from "./FormSolicitud";
-import ListadoComercios from "./ListadoComercios";
 import Iconos from "./Iconos";
 import IconosResponsive from "./IconosResponsive";
+import ModalSolicitud from "../modal/ModalSolicitud";
+import ModalEmpresas from "../modal/ModalEmpresas";
 
-const Servicios = ({ listado }) => {
+const Servicios = () => {
   return (
     <div id="features">
       <div className="jumbotron ">
@@ -20,78 +20,8 @@ const Servicios = ({ listado }) => {
         </div>
       </div>
 
-      <div
-        className="modal   fade "
-        id="empresas"
-        tabIndex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-xl p-2">
-          <div className="modal-content modalstyle border border-dark ">
-            <div className="modal-header">
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div className="modal-body  ">
-              {/* <Comercios /> */}
-              <ListadoComercios listado={listado} />
-            </div>
-            <div className="modal-footer ">
-              <button
-                type="button"
-                className="btn btn-primary"
-                data-dismiss="modal"
-              >
-                Cerrar
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div
-        className="modal  fade "
-        id="solicitud"
-        tabIndex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-xl p-2">
-          <div className="modal-content modalstyle border border-dark ">
-            <div className="modal-header">
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div className="modal-body  ">
-              <FormSolicitud />
-            </div>
-            <div className="modal-footer ">
-              <button
-                type="button"
-                className="btn btn-primary"
-                data-dismiss="modal"
-              >
-                Cerrar
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ModalSolicitud datatoggle="modal" datatarget="#solicitud" />
+      <ModalEmpresas datatoggle="modal" datatarget="#empresas" />
     </div>
   );
 };

@@ -2,17 +2,12 @@ import React from "react";
 
 import Layout from "../../components/layouts/Layout";
 import Comercios from "../../components/servicios/Comercios";
+import BannerPaginas from "../../components/header/BannerPaginas";
 
 const comercios = () => {
   return (
     <Layout>
-      <div>
-        <img
-          className="banner"
-          src="/img/batarjeta.jpg"
-          alt="sorteo dia del niño"
-        />
-      </div>
+   <BannerPaginas/>
 
       <div className="mt-4 p-2 ">
         <div className="formstyle ">

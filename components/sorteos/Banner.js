@@ -11,7 +11,7 @@ const Banner = () => {
         />
         <div className="middle-banner">
           <hr className="mt-4 mb-4" />
-          <a className=" btn btn-secondary btn-md text-white">
+          <a href="/sorteos/sorteos" className=" btn btn-secondary btn-md text-white">
             Entra Para Mas Info
           </a>
           <hr className="mt-4 mb-4" />
