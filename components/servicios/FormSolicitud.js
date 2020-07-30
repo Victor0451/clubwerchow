@@ -204,7 +204,7 @@ const FormSolicitud = ({ responsive }) => {
             </strong>
           </label>
           <input
-            type="text"
+            type="number"
             className="form-control border border-dark"
             placeholder="Telefono"
             name="telefono"
