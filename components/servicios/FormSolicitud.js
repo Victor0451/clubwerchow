@@ -160,7 +160,7 @@ const FormSolicitud = ({ responsive }) => {
             </strong>
           </label>
           <input
-            type="text"
+            type="number"
             className="form-control border border-dark"
             placeholder="DNI"
             name="dni"

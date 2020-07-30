@@ -10,6 +10,8 @@ export default function validarAltaPrestamo(valores) {
 
   if (!valores.dni) {
     errores.dni = "El dni es obligatorio";
+  } else if (valores.dni.length !== 8) {
+    errores.dni = "La dni debe ser de hasta 8 digitos";
   }
 
   if (!valores.telefono) {
