@@ -1,4 +1,5 @@
 import React from "react";
+import Contacto from "../contacto/Contacto";
 
 const Ganadores = () => {
   return (
@@ -37,6 +38,10 @@ const Ganadores = () => {
           />
         </div>
       </div>
+      <br />
+    
+
+      <Contacto />
     </div>
   );
 };

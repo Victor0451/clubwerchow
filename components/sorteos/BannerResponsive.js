@@ -13,11 +13,11 @@ const SorteosResponsive = () => {
 
       <div className="col-11 text-center mr-4">
         <a
-          href="/sorteos/sorteos"
+          href="/sorteos/ganadores"
           className=" btn btn-secondary btn-block mt-4 mb-4"
           target=""
         >
-          Entra Para Mas Info
+          Ganadores Del Sorteo
         </a>
       </div>
     </div>

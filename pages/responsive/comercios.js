@@ -3,11 +3,12 @@ import React from "react";
 import Layout from "../../components/layouts/Layout";
 import Comercios from "../../components/servicios/Comercios";
 import BannerPaginas from "../../components/header/BannerPaginas";
+import Contacto from "../../components/contacto/Contacto";
 
 const comercios = () => {
   return (
     <Layout>
-   <BannerPaginas/>
+      <BannerPaginas />
 
       <div className="mt-4 p-2 ">
         <div className="formstyle ">
@@ -16,6 +17,8 @@ const comercios = () => {
           </div>
         </div>
       </div>
+
+      <Contacto />
     </Layout>
   );
 };

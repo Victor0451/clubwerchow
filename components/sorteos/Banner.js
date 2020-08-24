@@ -11,8 +11,11 @@ const Banner = () => {
         />
         <div className="middle-banner">
           <hr className="mt-4 mb-4" />
-          <a href="/sorteos/sorteos" className=" btn btn-secondary btn-md text-white">
-            Entra Para Mas Info
+          <a
+            href="/sorteos/ganadores"
+            className=" btn btn-secondary btn-md text-white"
+          >
+            Ganadores Del Sorteo
           </a>
           <hr className="mt-4 mb-4" />
         </div>
