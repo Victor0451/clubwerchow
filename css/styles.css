@@ -39,6 +39,16 @@ body {
   text-align: left;
 }
 
+.imagen-ganadores {
+  width: 100%;
+  height: 100%;
+}
+
+.ganadores-fotos {
+  width: 100% !important;
+  height: 100% !important;
+}
+
 /* BANNER SORTEO */
 
 .banner-sorteo {
