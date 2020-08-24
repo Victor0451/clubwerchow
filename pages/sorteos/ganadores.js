@@ -3,6 +3,7 @@ import Layout from "../../components/layouts/Layout";
 import NavBarPag from "../../components/navbar/NavBarPag";
 import BannerPaginas from "../../components/header/BannerPaginas";
 import Ganadores from "../../components/sorteos/Ganadores";
+import Contacto from "../../components/contacto/Contacto";
 
 const ganadores = () => {
   return (
@@ -12,7 +13,8 @@ const ganadores = () => {
       <BannerPaginas />
 
       <Ganadores />
-     
+
+      <Contacto />
     </Layout>
   );
 };
