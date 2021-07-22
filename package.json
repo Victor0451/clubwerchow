@@ -33,7 +33,7 @@
     "react-table": "^6.11.5",
     "react-to-print": "^2.7.0",
     "toastr": "^2.1.4",
-    "xlsx": "^0.16.2"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
